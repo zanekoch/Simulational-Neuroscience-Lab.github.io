@@ -1,0 +1,139 @@
+<html>
+
+  <head>
+    <title>SNL|Simulational Neuroscience Lab</title>
+    <link rel="shortcut icon" href="images/SNL_brain.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--for hover over picture boot strap-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--for font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--for scrolling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    //sleep function to help typeWriter
+    function sleep(milliseconds) {
+      var start = new Date().getTime();
+      for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+          break;
+        }
+      }
+    }
+    //typewriter effect
+    var i = 0;
+    var txt = 'Welcome';
+    var speed = 130;
+    function typeWriter() {
+      if (i==0){
+        sleep(400);
+      }
+      if (i < txt.length) {
+        document.getElementById("name").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        /*if (i == 3){
+          sleep(1500);
+        }*/
+      }
+    }
+
+
+    </script>
+
+  </head>
+
+
+<body onload="typeWriter()">
+  <!-- parallax code start -->
+  <a id="home"></a>
+  <section class="section parallax parallax-1">
+    <!--nav bar-->
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#people">People</a>
+      <a href="#contact">Contact</a>
+
+      <a id="fancyname"><img id="logo" src="images/SNL_logo2.PNG"/></a>
+    </div>
+    <h1 id="name"></h1>
+  </section>
+  <section class="section content">
+    <div class-"container">
+      <a id="about"></a>
+      <h2 >About</h2>
+      <ul>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section parallax parallax-2">
+    <div class="container">
+      <a id="research"></a>
+      <h1>RESEARCH</h1>
+    </div>
+  </section>
+  <section class="section content">
+    <div class-"container">
+      <h2>Current Research</h2>
+      <ul>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+        <li ><p>Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis.</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="section parallax parallax-3">
+    <div class="container">
+      <a id="people"></a>
+      <h1>PEOPLE</h1>
+    </div>
+  </section>
+  <section class="section content">
+    <div class-"container">
+      <h2>Lab Members</h2>
+        <p> <img src="images/headshot1.jpg"  class="left"/> Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis. Sit docendi accumsan ad. Quo soluta nostro imperdiet ne, cu his conceptam suscipiantur, cu legimus lobortis dignissim nec. At odio sumo omittantur vim, oratio reprehendunt necessitatibus ne ius. Illum salutandi voluptatibus nec ea, quo et prompta placerat temporibus. Quo enim ridens pericula eu.
+        </p>
+        <p> <img src="images/headshot2.jpg" class="left"/> Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis. Sit docendi accumsan ad. Quo soluta nostro imperdiet ne, cu his conceptam suscipiantur, cu legimus lobortis dignissim nec. At odio sumo omittantur vim, oratio reprehendunt necessitatibus ne ius. Illum salutandi voluptatibus nec ea, quo et prompta placerat temporibus. Quo enim ridens pericula eu.
+        </p>
+        <p> <img src="images/headshot3.jpg" class="left"/> Lorem ipsum dolor sit amet, debitis mandamus cum ex, mea ea legere denique omittantur, numquam officiis oportere at vix. Te vel solet minimum. Enim posse perfecto ut vim, iusto possit et pro. Ad alienum fierent sed, et consul verear reformidans vis. Sit docendi accumsan ad. Quo soluta nostro imperdiet ne, cu his conceptam suscipiantur, cu legimus lobortis dignissim nec. At odio sumo omittantur vim, oratio reprehendunt necessitatibus ne ius. Illum salutandi voluptatibus nec ea, quo et prompta placerat temporibus. Quo enim ridens pericula eu.
+        </p>
+    </div>
+  </section>
+
+  <a id="contact"></a>
+  <section class="section content">
+    <div class-"container">
+      <h2>Contact</h2>
+      <a href="mailto:zanekoch@g.ucla.edu"><p>Email: zanekoch@g.ucla.edu</p></a>
+      <a href="https://www.facebook.com/profile.php?id=100001655983422" target="_blank"><p>Facebook</p></a>
+      <a href="https://www.linkedin.com/in/zane-koch-6a6ba3155/" target="_blank"><p>linkedIn</p></a>
+      <a href="https://github.com/zanekoch" target="_blank"><p>Github</p></a>
+    </div>
+  </section>
+
+</body>
+</html>
